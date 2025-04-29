@@ -56,7 +56,6 @@ def ask_gemini(query):
 
     return f"Error: {response.status_code} - {response.text}"
 
-import requests
 
 def ask_chatGPT(query):
     API_KEY = os.getenv("OPENAI_API_KEY")  # Replace with your actual API key
