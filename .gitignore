@@ -1,0 +1,52 @@
+# OS-generated files
+.DS_Store
+Thumbs.db
+
+# Build and binary files
+*.o
+*.out
+*.a
+*.so
+*.lo
+*.la
+*.al
+*.exe
+*.dll
+*.class
+*.pyc
+
+# Compiled binaries and executables
+bin/
+build/
+
+# CMake generated files
+CMakeFiles/
+CMakeCache.txt
+cmake_install.cmake
+Makefile
+
+# Logs and debug files
+# *.log
+# logs/
+
+# Backup files
+*~
+*.swp
+*.bak
+
+# Project-specific
+shellz_history.txt
+*.tmp
+*.pid
+
+# Test outputs or generated data
+tests/output_*
+results/
+*.csv
+
+# Automation script logs (optional)
+*.sh.log
+
+# Ignore local configuration files
+.env
+config.local.*
