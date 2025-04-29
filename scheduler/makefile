@@ -3,7 +3,6 @@
 # Compiler and flags
 CC = gcc
 CFLAGS = -Wall -Iinclude
-LDFLAGS = -lrt  # For mkdir() and file operations (optional, usually not needed)
 
 # Directories
 SRCDIR = src
@@ -24,7 +23,7 @@ all: $(TARGET) | $(LOGDIR)
 
 # Link object files to create executable
 $(TARGET): $(OBJECTS) | $(BINDIR)
-	$(CC) $(CFLAGS) $^ -o $@ $(LDFLAGS)
+	$(CC) $(CFLAGS) $^ -o $@
 
 # Compile source files to object files
 $(OBJDIR)/%.o: $(SRCDIR)/%.c | $(OBJDIR)
@@ -42,6 +41,6 @@ run: all
 # Clean build artifacts and logs
 clean:
 	rm -rf $(OBJDIR) $(BINDIR) $(LOGDIR)
-
+	
 # Phony targets
-.PHONY: all clean run
+# .PHONY: all clean run
