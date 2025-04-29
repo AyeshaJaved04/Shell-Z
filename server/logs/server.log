@@ -1,0 +1,214 @@
+[2025-04-25 10:18:24] Client IP: 127.0.0.1 | Method: GET | Requested: /index.html | Status: 200
+[2025-04-25 10:18:24] Client IP: 127.0.0.1 | Method: GET | Requested: /style.css | Status: 200
+[2025-04-25 10:18:24] Client IP: 127.0.0.1 | Method: GET | Requested: /script.js | Status: 200
+[2025-04-25 10:18:24] Client IP: 127.0.0.1 | Method: GET | Requested: /favicon.ico | Status: 200
+
+[2025-04-25 10:18:34] Client IP: 127.0.0.1 | Method: GET | Requested: /airways/index.html | Status: 200
+[2025-04-25 10:18:34] Client IP: 127.0.0.1 | Method: GET | Requested: /airways/styles.css | Status: 200
+[2025-04-25 10:18:34] Client IP: 127.0.0.1 | Method: GET | Requested: /airways/assets/destination-3.jpg | Status: 200
+[2025-04-25 10:18:34] Client IP: 127.0.0.1 | Method: GET | Requested: /airways/assets/destination-1.jpg | Status: 200
+[2025-04-25 10:18:34] Client IP: 127.0.0.1 | Method: GET | Requested: /airways/assets/destination-2.jpg | Status: 200
+[2025-04-25 10:18:34] Client IP: 127.0.0.1 | Method: GET | Requested: /airways/main.js | Status: 200
+[2025-04-25 10:18:34] Client IP: 127.0.0.1 | Method: GET | Requested: /airways/assets/showcase.jpg | Status: 200
+[2025-04-25 10:18:34] Client IP: 127.0.0.1 | Method: GET | Requested: /airways/assets/client-1.jpg | Status: 200
+[2025-04-25 10:18:34] Client IP: 127.0.0.1 | Method: GET | Requested: /airways/assets/client-2.jpg | Status: 200
+[2025-04-25 10:18:34] Client IP: 127.0.0.1 | Method: GET | Requested: /airways/assets/header.png | Status: 200
+[2025-04-25 10:18:34] Client IP: 127.0.0.1 | Method: GET | Requested: /airways/assets/client-3.jpg | Status: 200
+[2025-04-25 10:18:34] Client IP: 127.0.0.1 | Method: GET | Requested: /airways/assets/client-4.jpg | Status: 200
+[2025-04-25 10:18:34] Client IP: 127.0.0.1 | Method: GET | Requested: /airways/assets/header-bg.jpg | Status: 200
+[2025-04-25 10:18:34] Client IP: 127.0.0.1 | Method: GET | Requested: /favicon.ico | Status: 200
+
+[2025-04-25 10:19:03] Client IP: 127.0.0.1 | Method: GET | Requested: /headphones/index.html | Status: 200
+[2025-04-25 10:19:03] Client IP: 127.0.0.1 | Method: GET | Requested: /headphones/styles.css | Status: 200
+[2025-04-25 10:19:03] Client IP: 127.0.0.1 | Method: GET | Requested: /headphones/assets/logo-dark.png | Status: 200
+[2025-04-25 10:19:03] Client IP: 127.0.0.1 | Method: GET | Requested: /headphones/assets/logo-white.png | Status: 200
+[2025-04-25 10:19:03] Client IP: 127.0.0.1 | Method: GET | Requested: /headphones/assets/header-bg.png | Status: 200
+[2025-04-25 10:19:03] Client IP: 127.0.0.1 | Method: GET | Requested: /headphones/assets/header.png | Status: 200
+[2025-04-25 10:19:03] Client IP: 127.0.0.1 | Method: GET | Requested: /headphones/main.js | Status: 200
+[2025-04-25 10:19:03] Client IP: 127.0.0.1 | Method: GET | Requested: /headphones/assets/product.png | Status: 200
+[2025-04-25 10:19:03] Client IP: 127.0.0.1 | Method: GET | Requested: /headphones/assets/store-2.png | Status: 200
+[2025-04-25 10:19:03] Client IP: 127.0.0.1 | Method: GET | Requested: /headphones/assets/store-1.png | Status: 200
+[2025-04-25 10:19:03] Client IP: 127.0.0.1 | Method: GET | Requested: /headphones/assets/store-3.png | Status: 200
+[2025-04-25 10:19:03] Client IP: 127.0.0.1 | Method: GET | Requested: /headphones/assets/store-4.png | Status: 200
+[2025-04-25 10:19:03] Client IP: 127.0.0.1 | Method: GET | Requested: /headphones/assets/store-5.png | Status: 200
+[2025-04-25 10:19:03] Client IP: 127.0.0.1 | Method: GET | Requested: /headphones/assets/store-6.png | Status: 200
+[2025-04-25 10:19:03] Client IP: 127.0.0.1 | Method: GET | Requested: /favicon.ico | Status: 200
+
+[2025-04-25 10:19:10] Client IP: 127.0.0.1 | Method: GET | Requested: /index.html | Status: 200
+[2025-04-25 10:19:10] Client IP: 127.0.0.1 | Method: GET | Requested: /style.css | Status: 200
+[2025-04-25 10:19:10] Client IP: 127.0.0.1 | Method: GET | Requested: /script.js | Status: 200
+[2025-04-25 10:19:10] Client IP: 127.0.0.1 | Method: GET | Requested: /favicon.ico | Status: 200
+[2025-04-26 01:08:22] Client IP: 127.0.0.1 | Method: GET | Requested: /index.html | Status: 200
+[2025-04-26 01:08:22] Client IP: 127.0.0.1 | Method: GET | Requested: /style.css | Status: 200
+[2025-04-26 01:08:22] Client IP: 127.0.0.1 | Method: GET | Requested: /script.js | Status: 200
+[2025-04-26 01:08:22] Client IP: 127.0.0.1 | Method: GET | Requested: /favicon.ico | Status: 200
+
+[2025-04-26 01:08:38] Client IP: 127.0.0.1 | Method:  | Requested:  | Status: 200
+
+[2025-04-26 01:09:34] Client IP: 127.0.0.1 | Method: GET | Requested: /index.html | Status: 200
+[2025-04-26 01:09:34] Client IP: 127.0.0.1 | Method: GET | Requested: /script.js | Status: 200
+[2025-04-26 01:09:34] Client IP: 127.0.0.1 | Method: GET | Requested: /style.css | Status: 200
+[2025-04-26 01:09:34] Client IP: 127.0.0.1 | Method: GET | Requested: /favicon.ico | Status: 200
+[2025-04-26 11:06:01] Client IP: 127.0.0.1 | Method: GET | Requested: /index.html | Status: 200
+[2025-04-26 11:06:01] Client IP: 127.0.0.1 | Method: GET | Requested: /style.css | Status: 200
+[2025-04-26 11:06:01] Client IP: 127.0.0.1 | Method: GET | Requested: /script.js | Status: 200
+[2025-04-26 11:06:01] Client IP: 127.0.0.1 | Method: GET | Requested: /favicon.ico | Status: 200
+[2025-04-26 15:29:12] Client IP: 127.0.0.1 | Method: GET | Requested: /index.html | Status: 200
+[2025-04-26 15:29:12] Client IP: 127.0.0.1 | Method: GET | Requested: /style.css | Status: 200
+[2025-04-26 15:29:12] Client IP: 127.0.0.1 | Method: GET | Requested: /images/github-logo.png | Status: 200
+[2025-04-26 15:29:13] Client IP: 127.0.0.1 | Method: GET | Requested: /images/hero-bg.jpg | Status: 200
+[2025-04-26 15:29:13] Client IP: 127.0.0.1 | Method: GET | Requested: /favicon.ico | Status: 404
+
+[2025-04-26 15:29:18] Client IP: 127.0.0.1 | Method: GET | Requested: /developers.html | Status: 200
+[2025-04-26 15:29:18] Client IP: 127.0.0.1 | Method: GET | Requested: /style.css | Status: 200
+[2025-04-26 15:29:18] Client IP: 127.0.0.1 | Method: GET | Requested: /images/github-logo.png | Status: 200
+[2025-04-26 15:29:18] Client IP: 127.0.0.1 | Method: GET | Requested: /images/krrishna.png | Status: 200
+[2025-04-26 15:29:18] Client IP: 127.0.0.1 | Method: GET | Requested: /images/ayesha.png | Status: 200
+[2025-04-26 15:29:18] Client IP: 127.0.0.1 | Method: GET | Requested: /images/ashna.png | Status: 200
+[2025-04-26 15:29:18] Client IP: 127.0.0.1 | Method: GET | Requested: /images//hero-bg.jpg | Status: 200
+
+[2025-04-26 15:29:34] Client IP: 127.0.0.1 | Method: GET | Requested: /index.html | Status: 200
+[2025-04-26 15:29:34] Client IP: 127.0.0.1 | Method: GET | Requested: /style.css | Status: 200
+[2025-04-26 15:29:34] Client IP: 127.0.0.1 | Method: GET | Requested: /images/github-logo.png | Status: 200
+[2025-04-26 15:29:34] Client IP: 127.0.0.1 | Method: GET | Requested: /images/hero-bg.jpg | Status: 200
+
+[2025-04-26 15:30:44] Client IP: 127.0.0.1 | Method: GET | Requested: /developers.html | Status: 200
+[2025-04-26 15:30:44] Client IP: 127.0.0.1 | Method: GET | Requested: /style.css | Status: 200
+[2025-04-26 15:30:44] Client IP: 127.0.0.1 | Method: GET | Requested: /images/github-logo.png | Status: 200
+[2025-04-26 15:30:44] Client IP: 127.0.0.1 | Method: GET | Requested: /images/krrishna.png | Status: 200
+[2025-04-26 15:30:44] Client IP: 127.0.0.1 | Method: GET | Requested: /images/ayesha.png | Status: 200
+[2025-04-26 15:30:44] Client IP: 127.0.0.1 | Method: GET | Requested: /images/ashna.png | Status: 200
+[2025-04-26 15:30:44] Client IP: 127.0.0.1 | Method: GET | Requested: /images//hero-bg.jpg | Status: 200
+[2025-04-26 15:34:29] Client IP: 127.0.0.1 | Method:  | Requested:  | Status: 200
+[2025-04-26 15:34:29] Client IP: 127.0.0.1 | Method:  | Requested:  | Status: 200
+[2025-04-26 15:34:29] Client IP: 127.0.0.1 | Method: GET | Requested: /index.html | Status: 200
+[2025-04-26 15:34:29] Client IP: 127.0.0.1 | Method: GET | Requested: /index.html | Status: 200
+[2025-04-26 15:34:29] Client IP: 127.0.0.1 | Method: GET | Requested: /style.css | Status: 200
+[2025-04-26 15:34:29] Client IP: 127.0.0.1 | Method: GET | Requested: /images/github-logo.png | Status: 200
+[2025-04-26 15:34:29] Client IP: 127.0.0.1 | Method: GET | Requested: /style.css | Status: 200
+[2025-04-26 15:34:29] Client IP: 127.0.0.1 | Method: GET | Requested: /images/github-logo.png | Status: 200
+[2025-04-26 15:34:29] Client IP: 127.0.0.1 | Method: GET | Requested: /favicon.ico | Status: 404
+[2025-04-26 15:34:29] Client IP: 127.0.0.1 | Method: GET | Requested: /images/hero-bg.jpg | Status: 200
+[2025-04-26 15:34:29] Client IP: 127.0.0.1 | Method: GET | Requested: /images/hero-bg.jpg | Status: 200
+[2025-04-26 15:35:59] Client IP: 127.0.0.1 | Method: GET | Requested: /index.html | Status: 200
+[2025-04-26 15:35:59] Client IP: 127.0.0.1 | Method: GET | Requested: /style.css | Status: 200
+[2025-04-26 15:35:59] Client IP: 127.0.0.1 | Method: GET | Requested: /images/github-logo.png | Status: 200
+[2025-04-26 15:35:59] Client IP: 127.0.0.1 | Method: GET | Requested: /images/hero-bg.jpg | Status: 200
+
+[2025-04-26 15:36:04] Client IP: 127.0.0.1 | Method: GET | Requested: /developers.html | Status: 200
+[2025-04-26 15:36:04] Client IP: 127.0.0.1 | Method: GET | Requested: /style.css | Status: 200
+[2025-04-26 15:36:04] Client IP: 127.0.0.1 | Method: GET | Requested: /images/github-logo.png | Status: 200
+[2025-04-26 15:36:04] Client IP: 127.0.0.1 | Method: GET | Requested: /images/krrishna.png | Status: 200
+[2025-04-26 15:36:04] Client IP: 127.0.0.1 | Method: GET | Requested: /images/ashna.png | Status: 200
+[2025-04-26 15:36:04] Client IP: 127.0.0.1 | Method: GET | Requested: /images/ayesha.png | Status: 200
+[2025-04-26 15:36:04] Client IP: 127.0.0.1 | Method: GET | Requested: /images//hero-bg.jpg | Status: 200
+[2025-04-26 15:36:06] Client IP: 127.0.0.1 | Method: GET | Requested: /index.html | Status: 200
+[2025-04-26 15:36:06] Client IP: 127.0.0.1 | Method: GET | Requested: /style.css | Status: 200
+[2025-04-26 15:36:06] Client IP: 127.0.0.1 | Method: GET | Requested: /images/github-logo.png | Status: 200
+[2025-04-26 15:36:06] Client IP: 127.0.0.1 | Method: GET | Requested: /images/hero-bg.jpg | Status: 200
+[2025-04-27 21:09:06] Client IP: 127.0.0.1 | Method: GET | Requested: /index.html | Status: 200
+[2025-04-27 21:09:06] Client IP: 127.0.0.1 | Method: GET | Requested: /images/github-logo.png | Status: 200
+[2025-04-27 21:09:06] Client IP: 127.0.0.1 | Method: GET | Requested: /style.css | Status: 200
+[2025-04-27 21:09:06] Client IP: 127.0.0.1 | Method: GET | Requested: /images/hero-bg.jpg | Status: 200
+[2025-04-27 21:09:06] Client IP: 127.0.0.1 | Method: GET | Requested: /favicon.ico | Status: 404
+
+[2025-04-27 21:09:13] Client IP: 127.0.0.1 | Method: GET | Requested: /developers.html | Status: 200
+[2025-04-27 21:09:13] Client IP: 127.0.0.1 | Method: GET | Requested: /style.css | Status: 200
+[2025-04-27 21:09:13] Client IP: 127.0.0.1 | Method: GET | Requested: /images/github-logo.png | Status: 200
+[2025-04-27 21:09:13] Client IP: 127.0.0.1 | Method: GET | Requested: /images/krrishna.png | Status: 200
+[2025-04-27 21:09:13] Client IP: 127.0.0.1 | Method: GET | Requested: /images/ashna.png | Status: 200
+[2025-04-27 21:09:13] Client IP: 127.0.0.1 | Method: GET | Requested: /images/ayesha.png | Status: 200
+[2025-04-27 21:09:13] Client IP: 127.0.0.1 | Method: GET | Requested: /images//hero-bg.jpg | Status: 200
+
+[2025-04-27 21:09:42] Client IP: 127.0.0.1 | Method: GET | Requested: /index.html | Status: 200
+[2025-04-27 21:09:42] Client IP: 127.0.0.1 | Method: GET | Requested: /style.css | Status: 200
+[2025-04-27 21:09:42] Client IP: 127.0.0.1 | Method: GET | Requested: /images/github-logo.png | Status: 200
+[2025-04-27 21:09:42] Client IP: 127.0.0.1 | Method: GET | Requested: /images/hero-bg.jpg | Status: 200
+[2025-04-28 01:19:06] Client IP: 127.0.0.1 | Method: GET | Requested: /index.html | Status: 200
+[2025-04-28 01:19:06] Client IP: 127.0.0.1 | Method: GET | Requested: /style.css | Status: 200
+[2025-04-28 01:19:06] Client IP: 127.0.0.1 | Method: GET | Requested: /images/github-logo.png | Status: 200
+[2025-04-28 01:19:06] Client IP: 127.0.0.1 | Method: GET | Requested: /images/hero-bg.jpg | Status: 200
+[2025-04-28 01:19:06] Client IP: 127.0.0.1 | Method: GET | Requested: /favicon.ico | Status: 404
+
+[2025-04-28 01:19:18] Client IP: 127.0.0.1 | Method: GET | Requested: /static/pages/index.html | Status: 404
+
+[2025-04-28 01:19:41] Client IP: 127.0.0.1 | Method: GET | Requested: /static/pages/testtt/index.html | Status: 404
+
+[2025-04-28 01:19:46] Client IP: 127.0.0.1 | Method: GET | Requested: /static/pages/testtt/index.html | Status: 404
+[2025-04-28 01:19:47] Client IP: 127.0.0.1 | Method: GET | Requested: /static/pages/testtt/index.html | Status: 404
+
+[2025-04-28 01:20:11] Client IP: 127.0.0.1 | Method: GET | Requested: /pages/testtt/index.html | Status: 200
+[2025-04-28 01:20:11] Client IP: 127.0.0.1 | Method: GET | Requested: /pages/testtt/bg.jpg | Status: 200
+[2025-04-28 09:11:10] Client IP: 127.0.0.1 | Method: GET | Requested: /index.html | Status: 200
+[2025-04-28 09:11:10] Client IP: 127.0.0.1 | Method: GET | Requested: /style.css | Status: 200
+[2025-04-28 09:11:10] Client IP: 127.0.0.1 | Method: GET | Requested: /images/github-logo.png | Status: 200
+[2025-04-28 09:11:10] Client IP: 127.0.0.1 | Method: GET | Requested: /images/hero-bg.jpg | Status: 200
+[2025-04-28 09:11:10] Client IP: 127.0.0.1 | Method: GET | Requested: /favicon.ico | Status: 404
+
+[2025-04-28 09:11:15] Client IP: 127.0.0.1 | Method: GET | Requested: /developers.html | Status: 200
+[2025-04-28 09:11:15] Client IP: 127.0.0.1 | Method: GET | Requested: /images/github-logo.png | Status: 200
+[2025-04-28 09:11:15] Client IP: 127.0.0.1 | Method: GET | Requested: /style.css | Status: 200
+[2025-04-28 09:11:15] Client IP: 127.0.0.1 | Method: GET | Requested: /images/krrishna.png | Status: 200
+[2025-04-28 09:11:15] Client IP: 127.0.0.1 | Method: GET | Requested: /images//hero-bg.jpg | Status: 200
+[2025-04-28 09:11:15] Client IP: 127.0.0.1 | Method: GET | Requested: /images/ashna.png | Status: 200
+[2025-04-28 09:11:15] Client IP: 127.0.0.1 | Method: GET | Requested: /images/ayesha.png | Status: 200
+[2025-04-28 09:32:19] Client IP: 127.0.0.1 | Method: GET | Requested: /index.html | Status: 200
+[2025-04-28 09:32:19] Client IP: 127.0.0.1 | Method: GET | Requested: /style.css | Status: 200
+[2025-04-28 09:32:19] Client IP: 127.0.0.1 | Method: GET | Requested: /images/github-logo.png | Status: 200
+[2025-04-28 09:32:19] Client IP: 127.0.0.1 | Method: GET | Requested: /images/hero-bg.jpg | Status: 200
+[2025-04-28 09:32:19] Client IP: 127.0.0.1 | Method: GET | Requested: /favicon.ico | Status: 404
+
+[2025-04-28 09:32:47] Client IP: 127.0.0.1 | Method: GET | Requested: /developers.html | Status: 200
+[2025-04-28 09:32:47] Client IP: 127.0.0.1 | Method: GET | Requested: /style.css | Status: 200
+[2025-04-28 09:32:47] Client IP: 127.0.0.1 | Method: GET | Requested: /images/github-logo.png | Status: 200
+[2025-04-28 09:32:47] Client IP: 127.0.0.1 | Method: GET | Requested: /images//hero-bg.jpg | Status: 200
+[2025-04-28 09:32:47] Client IP: 127.0.0.1 | Method: GET | Requested: /images/krrishna.png | Status: 200
+[2025-04-28 09:32:47] Client IP: 127.0.0.1 | Method: GET | Requested: /images/ayesha.png | Status: 200
+[2025-04-28 09:32:47] Client IP: 127.0.0.1 | Method: GET | Requested: /images/ashna.png | Status: 200
+[2025-04-28 09:35:52] Client IP: 127.0.0.1 | Method: GET | Requested: /pages/airways | Status: 200
+
+[2025-04-28 09:36:01] Client IP: 127.0.0.1 | Method: GET | Requested: /index.html | Status: 200
+[2025-04-28 09:36:01] Client IP: 127.0.0.1 | Method: GET | Requested: /style.css | Status: 200
+[2025-04-28 09:36:01] Client IP: 127.0.0.1 | Method: GET | Requested: /images/github-logo.png | Status: 200
+[2025-04-28 09:36:01] Client IP: 127.0.0.1 | Method: GET | Requested: /images/hero-bg.jpg | Status: 200
+
+[2025-04-28 09:36:08] Client IP: 127.0.0.1 | Method: GET | Requested: /pages/airways | Status: 200
+
+[2025-04-28 09:36:23] Client IP: 127.0.0.1 | Method: GET | Requested: /pages/airways/index.htm | Status: 404
+
+[2025-04-28 09:36:26] Client IP: 127.0.0.1 | Method: GET | Requested: /pages/airways/index.html | Status: 200
+[2025-04-28 09:36:26] Client IP: 127.0.0.1 | Method: GET | Requested: /pages/airways/styles.css | Status: 200
+[2025-04-28 09:36:26] Client IP: 127.0.0.1 | Method: GET | Requested: /pages/airways/assets/destination-1.jpg | Status: 200
+[2025-04-28 09:36:26] Client IP: 127.0.0.1 | Method: GET | Requested: /pages/airways/assets/destination-3.jpg | Status: 200
+[2025-04-28 09:36:26] Client IP: 127.0.0.1 | Method: GET | Requested: /pages/airways/assets/destination-2.jpg | Status: 200
+[2025-04-28 09:36:26] Client IP: 127.0.0.1 | Method: GET | Requested: /pages/airways/assets/showcase.jpg | Status: 200
+[2025-04-28 09:36:26] Client IP: 127.0.0.1 | Method: GET | Requested: /pages/airways/main.js | Status: 200
+[2025-04-28 09:36:26] Client IP: 127.0.0.1 | Method: GET | Requested: /pages/airways/assets/header.png | Status: 200
+[2025-04-28 09:36:26] Client IP: 127.0.0.1 | Method: GET | Requested: /pages/airways/assets/client-1.jpg | Status: 200
+[2025-04-28 09:36:26] Client IP: 127.0.0.1 | Method: GET | Requested: /pages/airways/assets/client-2.jpg | Status: 200
+[2025-04-28 09:36:26] Client IP: 127.0.0.1 | Method: GET | Requested: /pages/airways/assets/client-3.jpg | Status: 200
+[2025-04-28 09:36:26] Client IP: 127.0.0.1 | Method: GET | Requested: /pages/airways/assets/client-4.jpg | Status: 200
+[2025-04-28 09:36:26] Client IP: 127.0.0.1 | Method: GET | Requested: /pages/airways/assets/header-bg.jpg | Status: 200
+[2025-04-29 13:53:12] Client IP: 127.0.0.1 | Method: GET | Requested: /index.html | Status: 200
+[2025-04-29 13:53:12] Client IP: 127.0.0.1 | Method: GET | Requested: /style.css | Status: 200
+[2025-04-29 13:53:12] Client IP: 127.0.0.1 | Method: GET | Requested: /images/github-logo.png | Status: 200
+[2025-04-29 13:53:13] Client IP: 127.0.0.1 | Method: GET | Requested: /images/hero-bg.jpg | Status: 200
+[2025-04-29 13:53:13] Client IP: 127.0.0.1 | Method: GET | Requested: /favicon.ico | Status: 404
+[2025-04-29 13:53:15] Client IP: 127.0.0.1 | Method: GET | Requested: /developers.html | Status: 200
+[2025-04-29 13:53:15] Client IP: 127.0.0.1 | Method: GET | Requested: /style.css | Status: 200
+[2025-04-29 13:53:15] Client IP: 127.0.0.1 | Method: GET | Requested: /images/github-logo.png | Status: 200
+[2025-04-29 13:53:15] Client IP: 127.0.0.1 | Method: GET | Requested: /images/krrishna.png | Status: 200
+[2025-04-29 13:53:15] Client IP: 127.0.0.1 | Method: GET | Requested: /images/ashna.png | Status: 200
+[2025-04-29 13:53:15] Client IP: 127.0.0.1 | Method: GET | Requested: /images/ayesha.png | Status: 200
+[2025-04-29 13:53:15] Client IP: 127.0.0.1 | Method: GET | Requested: /images//hero-bg.jpg | Status: 200
+[2025-04-29 13:53:16] Client IP: 127.0.0.1 | Method: GET | Requested: /developers.html | Status: 200
+[2025-04-29 13:53:16] Client IP: 127.0.0.1 | Method: GET | Requested: /style.css | Status: 200
+[2025-04-29 13:53:16] Client IP: 127.0.0.1 | Method: GET | Requested: /images/github-logo.png | Status: 200
+[2025-04-29 13:53:16] Client IP: 127.0.0.1 | Method: GET | Requested: /images/krrishna.png | Status: 200
+[2025-04-29 13:53:16] Client IP: 127.0.0.1 | Method: GET | Requested: /images/ayesha.png | Status: 200
+[2025-04-29 13:53:16] Client IP: 127.0.0.1 | Method: GET | Requested: /images/ashna.png | Status: 200
+[2025-04-29 13:53:17] Client IP: 127.0.0.1 | Method: GET | Requested: /images//hero-bg.jpg | Status: 200
+[2025-04-29 13:53:18] Client IP: 127.0.0.1 | Method: GET | Requested: /index.html | Status: 200
+[2025-04-29 13:53:18] Client IP: 127.0.0.1 | Method: GET | Requested: /style.css | Status: 200
+[2025-04-29 13:53:18] Client IP: 127.0.0.1 | Method: GET | Requested: /images/github-logo.png | Status: 200
+[2025-04-29 13:53:18] Client IP: 127.0.0.1 | Method: GET | Requested: /images/hero-bg.jpg | Status: 200
