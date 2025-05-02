@@ -102,7 +102,10 @@ int main()
         exit(EXIT_FAILURE);
     }
     /* ---------------- Server Running ---------------- */
-    usleep(300000); // Sleep 300ms (0.3s)
+    srand(time(NULL));
+    int delay = ((rand() % 200) + 100);
+
+    usleep(delay * 1000); // delay between 100 - 300 ms
     gettimeofday(&end_time, NULL);
     long seconds = end_time.tv_sec - start_time.tv_sec;
     long useconds = end_time.tv_usec - start_time.tv_usec;
