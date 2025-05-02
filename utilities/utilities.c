@@ -92,3 +92,11 @@ void gotoxy(int x, int y)
 {
     printf("\033[%d;%dH", y, x);
 }
+
+void enter_key_to_continue(int x, int y){
+    char ch = ' ';
+
+    gotoxy(x, y);
+    animate("Press ENTER Key To Continue...", 30, 1, 32);
+    scanf("%c", &ch);
+}
