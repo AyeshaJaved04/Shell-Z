@@ -43,6 +43,53 @@ void execute_command(char *input)
 
     if (strcmp(args[0], "alpha") == 0)
     {
+        if (args[1] && strcmp(args[1], "git") == 0 && args[2])
+        {
+            if (strcmp(args[2], "init") == 0)
+            {
+                system("/Users/alpha/Developer/os_final/Shell-Z/scripts/git_init.sh");
+                return;
+            }
+        }
+
+        if (args[1] && strcmp(args[1], "clone") == 0 && args[2])
+        {
+            if (strcmp(args[2], "all") == 0 || strcmp(args[2], "-a") == 0)
+            {
+                system("/Users/alpha/Developer/Shell-Z_v.1.0/scripts/git_clone_all.sh");
+                return;
+            }
+        }
+
+        if (args[1] && strcmp(args[1], "fetch") == 0 && args[2])
+        {
+            if (strcmp(args[2], "github") == 0 && args[3])
+            {
+                if (strcmp(args[3], "profile") == 0)
+                {
+                    system("/Users/alpha/Developer/Shell-Z_v.1.0/scripts/get_github_info.sh");
+                    return;
+                }
+            }
+        }
+
+        if (args[1] && strcmp(args[1], "react") == 0 && args[2])
+        {
+            if (strcmp(args[2], "init") == 0)
+            {
+                system("/Users/alpha/Developer/Shell-Z_v.1.0/scripts/react_init.sh");
+                return;
+            }
+        }
+
+        if (args[1] && strcmp(args[1], "next") == 0 && args[2])
+        {
+            if (strcmp(args[2], "init") == 0)
+            {
+                system("/Users/alpha/Developer/Shell-Z_v.1.0/scripts/next_init.sh");
+                return;
+            }
+        }
         if (args[1] && strcmp(args[1], "install") == 0 && args[2])
         {
             char command[1024];
