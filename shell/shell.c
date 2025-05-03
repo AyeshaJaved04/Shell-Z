@@ -2,6 +2,7 @@
 #include <stdlib.h>
 #include <unistd.h>
 #include <string.h>
+#include <sys/wait.h>
 #include <sys/stat.h>
 #include "../include/shell.h"
 #include "../include/custom_ui_modules.h"
