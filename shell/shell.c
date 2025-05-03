@@ -166,23 +166,30 @@ void execute_command(char *input)
                 system("cd /Users/alpha/Developer/Shell-Z_v.1.0/server/ && make clean");
                 return;
             }
+            else if (args[2] && (strcmp(args[2], "scheduler") == 0))
+            {
+                system("cd /Users/alpha/Developer/Shell-Z_v.1.0/scheduler/ && make clean");
+                return;
+            }
         }
 
         if (args[1] && ((strcmp(args[1], "run") == 0) || (strcmp(args[1], "start") == 0)))
         {
             if (args[2] && ((strcmp(args[2], "server") == 0) || (strcmp(args[2], "dev") == 0)))
             {
-                system("cd server && make");
+                system("cd /Users/alpha/Developer/Shell-Z_v.1.0/server/ && make");
                 // system("pwd");
-                system("cd server && ./bin/server");
+                system("cd /Users/alpha/Developer/Shell-Z_v.1.0/server/ && ./bin/server");
                 return;
             }
 
-            // if (args[2] && (strcmp(args[2], "scheduler") == 0))
-            // {
+            else if (args[2] && (strcmp(args[2], "scheduler") == 0))
+            {
 
-            //     return;
-            // }
+                system("cd /Users/alpha/Developer/Shell-Z_v.1.0/scheduler/ && make");
+                system("cd /Users/alpha/Developer/Shell-Z_v.1.0/scheduler/ && ./bin/cpu_scheduling");
+                return;
+            }
         }
 
         if (args[1] && (strcmp(args[1], "explain") == 0 || strcmp(args[1], "generate") == 0 || strcmp(args[1], "ask") == 0) && args[2])
