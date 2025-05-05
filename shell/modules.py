@@ -23,6 +23,21 @@ def typewriter_effect(text, delay=0.02):
         sys.stdout.flush()
         time.sleep(delay)
     print()
+    
+def model_router(model_name, query):
+    model_name = model_name.lower()
+    if model_name == "gemini":
+        return ask_gemini(query)
+    elif model_name == "deepseek":
+        return ask_deepseek(query)
+    elif model_name == "gpt":
+        return ask_chatGPT(query)
+    elif model_name == "perplexity":
+        return ask_perplexity(query)
+    elif model_name == "claude":
+        return ask_claude_sonnet(query)
+    else:
+        return f"Shell-Z doesn't support: {model_name}"
 
 def ask_gemini(query):
     headers = {
