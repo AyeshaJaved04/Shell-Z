@@ -4,6 +4,7 @@ import re
 import os
 import requests
 import json
+import anthropic
 from openai import OpenAI
 from dotenv import load_dotenv
 
@@ -100,3 +101,58 @@ def ask_deepseek(query):
         stream=False
     )
     print(response.choices[0].message.content)
+        
+def ask_perplexity(query):
+    headers = {
+        "Authorization": f"Bearer {os.getenv('PERPLEXITY_API_KEY')}",
+        "Content-Type": "application/json"
+    }
+
+    payload = {
+        "model": "sonar",
+        "messages": [
+            {
+                "role": "system",
+                "content": "Be precise and concise."
+            },
+            {
+                "role": "user",
+                "content": query
+            }
+        ]
+    }
+
+    try:
+        response = requests.post("https://api.perplexity.ai/chat/completions", headers=headers, json=payload)
+        response.raise_for_status()
+        result = response.json()
+        return result["choices"][0]["message"]["content"]
+    except requests.exceptions.RequestException as err:
+        return f"Perplexity API error: {err}"
+    except (KeyError, IndexError, TypeError) as parse_err:
+        return f"Perplexity parsing error: {parse_err}"
+
+
+def ask_claude_sonnet(query):
+    client = anthropic.Anthropic(api_key=os.getenv("CLAUDE_API_KEY"))
+
+    try:
+        message = client.messages.create(
+            model="claude-3-sonnet-20240229",
+            max_tokens=1024,
+            temperature=0.7,
+            system="You are a helpful assistant for Shell-Z.",
+            messages=[
+                {
+                    "role": "user",
+                    "content": [
+                        {"type": "text", "text": query}
+                    ]
+                }
+            ]
+        )
+
+        return "\n".join(block.text for block in message.content if block.type == "text")
+
+    except Exception as e:
+        return f"Claude API error: {str(e)}"
