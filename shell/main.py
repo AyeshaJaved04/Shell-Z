@@ -4,6 +4,8 @@ from modules import typewriter_effect
 from modules import ask_gemini
 from modules import ask_chatGPT
 from modules import ask_deepseek
+from modules import ask_perplexity
+from modules import ask_claude_sonnet
 
 if __name__ == "__main__":
     
@@ -20,9 +22,14 @@ if __name__ == "__main__":
         raw_response = ask_deepseek(user_query)
     elif model_name == "gpt":
         raw_response = ask_chatGPT(user_query)
+    elif model_name == "perplexity":
+        raw_response = ask_perplexity(user_query)
+    elif model_name == "claude":
+        raw_response = ask_claude_sonnet(user_query)
     else:
         print(f"Shell-Z doesn't support: {model_name}")
         sys.exit(1)
+
 
     cleaned_response = clean_response(raw_response)
     typewriter_effect(cleaned_response)
