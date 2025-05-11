@@ -48,7 +48,7 @@ void execute_command(char *input)
         {
             if (strcmp(args[2], "init") == 0)
             {
-                system("/Users/alpha/Developer/os_final/Shell-Z/scripts/git_init.sh");
+                system("/app/scripts/git_init.sh");
                 return;
             }
         }
@@ -57,7 +57,7 @@ void execute_command(char *input)
         {
             if (strcmp(args[2], "all") == 0 || strcmp(args[2], "-a") == 0)
             {
-                system("/Users/alpha/Developer/Shell-Z_v.1.0/scripts/git_clone_all.sh");
+                system("/app/scripts/git_clone_all.sh");
                 return;
             }
         }
@@ -68,7 +68,7 @@ void execute_command(char *input)
             {
                 if (strcmp(args[3], "profile") == 0)
                 {
-                    system("/Users/alpha/Developer/Shell-Z_v.1.0/scripts/get_github_info.sh");
+                    system("/app/scripts/get_github_info.sh");
                     return;
                 }
             }
@@ -78,7 +78,7 @@ void execute_command(char *input)
         {
             if (strcmp(args[2], "init") == 0)
             {
-                system("/Users/alpha/Developer/Shell-Z_v.1.0/scripts/react_init.sh");
+                system("/app/scripts/react_init.sh");
                 return;
             }
         }
@@ -87,7 +87,7 @@ void execute_command(char *input)
         {
             if (strcmp(args[2], "init") == 0)
             {
-                system("/Users/alpha/Developer/Shell-Z_v.1.0/scripts/next_init.sh");
+                system("/app/scripts/next_init.sh");
                 return;
             }
         }
@@ -114,7 +114,7 @@ void execute_command(char *input)
             if (stat(args[2], &st) == 0 && S_ISDIR(st.st_mode))
             {
                 char command[512];
-                snprintf(command, sizeof(command), "cp -r %s /Users/alpha/Developer/Shell-Z_v.1.0/server/static/pages/", args[2]);
+                snprintf(command, sizeof(command), "cp -r %s /app/server/static/pages/", args[2]);
                 int status = system(command);
                 if (status == 0)
                     printf("Page added successfully.\n");
@@ -164,12 +164,12 @@ void execute_command(char *input)
         {
             if (args[2] && (strcmp(args[2], "server") == 0))
             {
-                system("cd /Users/alpha/Developer/Shell-Z_v.1.0/server/ && make clean");
+                system("cd /app/server/ && make clean");
                 return;
             }
             else if (args[2] && (strcmp(args[2], "scheduler") == 0))
             {
-                system("cd /Users/alpha/Developer/Shell-Z_v.1.0/scheduler/ && make clean");
+                system("cd /app/scheduler/ && make clean");
                 return;
             }
         }
@@ -178,24 +178,24 @@ void execute_command(char *input)
         {
             if (args[2] && ((strcmp(args[2], "server") == 0) || (strcmp(args[2], "dev") == 0)))
             {
-                system("cd /Users/alpha/Developer/Shell-Z_v.1.0/server/ && make");
+                system("cd /app/server/ && make");
                 // system("pwd");
-                system("cd /Users/alpha/Developer/Shell-Z_v.1.0/server/ && ./bin/server");
+                system("cd /app/server/ && ./bin/server");
                 return;
             }
 
             else if (args[2] && (strcmp(args[2], "scheduler") == 0))
             {
 
-                system("cd /Users/alpha/Developer/Shell-Z_v.1.0/scheduler/ && make");
-                system("cd /Users/alpha/Developer/Shell-Z_v.1.0/scheduler/ && ./bin/cpu_scheduling");
+                system("cd /app/scheduler/ && make");
+                system("cd /app/scheduler/ && ./bin/cpu_scheduling");
                 return;
             }
         }
 
         if (args[1] && (strcmp(args[1], "explain") == 0 || strcmp(args[1], "generate") == 0 || strcmp(args[1], "ask") == 0) && args[2])
         {
-            char python_cmd[MAX_INPUT_SIZE] = "python3 /Users/alpha/Developer/Shell-Z_v.1.0/shell/main.py \"";
+            char python_cmd[MAX_INPUT_SIZE] = "python3 /app/shell/main.py \"";
             for (int j = 2; args[j]; j++)
             {
                 strcat(python_cmd, args[j]);
