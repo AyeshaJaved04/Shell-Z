@@ -75,13 +75,19 @@ Shell-Z/
 Follow the steps below to install and set up Shell-Z on your system.
 
 __Prerequisites__
+
 Before installing Shell-Z, make sure you have the following installed:
 
 `OS:` UNIX-based platforms (macOS or Linux).
+
 `Git:` To clone the repository.
+
 `Python3:` Required for the AI model integration.
+
 `pip3:` Python package manager to install dependencies.
+
 `GCC:` Required for compiling C components.
+
 `Make:` To automate Shell-Z build processes.
 
 __Installation__
