@@ -17,7 +17,7 @@ OBJECTS = $(patsubst %.c,$(OBJ_DIR)/%.o,$(SOURCES))
 EXEC = $(BIN_DIR)/main
 
 # Default target
-all: $(EXEC)
+build: $(EXEC)
 
 # Link object files to create the executable
 $(EXEC): $(OBJECTS)
