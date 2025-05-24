@@ -1,6 +1,22 @@
+<div align="center">
+  <br />
+    <a href="https://www.youtube.com/watch?v=43816Pa6y1k" target="_blank">
+      <img src="https://github.com/user-attachments/assets/a5dc6393-05b8-4356-b417-3dcfcd96076d" alt="Project Banner">
+      </a>
+  <br />
+
+  ![C](https://img.shields.io/badge/c-%2300599C.svg?style=for-the-badge&logo=c&logoColor=white) ![Python](https://img.shields.io/badge/python-3670A0?style=for-the-badge&logo=python&logoColor=ffdd54) ![Bash Script](https://img.shields.io/badge/bash_script-%23121011.svg?style=for-the-badge&logo=gnu-bash&logoColor=white) ![HTML5](https://img.shields.io/badge/html5-%23E34F26.svg?style=for-the-badge&logo=html5&logoColor=white) ![CSS3](https://img.shields.io/badge/css3-%231572B6.svg?style=for-the-badge&logo=css3&logoColor=white) ![CMake](https://img.shields.io/badge/CMake-%23008FBA.svg?style=for-the-badge&logo=cmake&logoColor=white)
+ <!-- <br />
+ [![LinkedIn](https://img.shields.io/badge/LinkedIn-%230077B5.svg?logo=linkedin&logoColor=white)](https://linkedin.com/in/krrishkumar) 
+[![YouTube](https://img.shields.io/badge/YouTube-%23FF0000.svg?logo=YouTube&logoColor=white)](https://youtube.com/@codewithalphadotcom) -->
+  <br />
+
+
 # Shell-Z - Custom-Built AI Powered Terminal
 
 A Custom-Built, AI-integrated terminal designed to enhance the command-line experience by combining modern development workflows, automation, and core operating system principles — all powered by a powerful command handler called __alpha__
+
+</div>
 
 ## Features
 
