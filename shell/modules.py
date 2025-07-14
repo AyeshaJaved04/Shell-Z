@@ -7,6 +7,8 @@ import json
 import anthropic
 from openai import OpenAI
 from dotenv import load_dotenv
+from google import genai
+from google.genai import types
 
 load_dotenv()
 
@@ -40,69 +42,46 @@ def model_router(model_name, query):
         return f"Shell-Z doesn't support: {model_name}"
 
 def ask_gemini(query):
-    headers = {
-        "Content-Type": "application/json"
-    }
-    data = {
-        "contents": [
-            {
-                "parts": [
-                    {"text": query}
-                ]
-            }
-        ]
-    }
+    client = genai.Client(
+        api_key=os.environ.get("GEMINI_API_KEY"),
+    )
 
-    GEMINI_KEY = os.getenv("GEMINI_API_KEY")
-    URL = os.getenv("GEMINI_URL")
-
-    GEMINI_URL = URL + GEMINI_KEY
-    response = requests.post(GEMINI_URL, headers=headers, data=json.dumps(data))
-
-    if response.status_code == 200:
-        result = response.json()
-        
-        try:
-            if "candidates" in result and "content" in result["candidates"][0]:
-                parts = result["candidates"][0]["content"].get("parts", [])
-                ai_text = "\n".join(part["text"] for part in parts if "text" in part)
-                return ai_text
-        except (KeyError, IndexError, TypeError) as e:
-            return f"Error extracting response: {str(e)}"
-
-    return f"Error: {response.status_code} - {response.text}"
-
-
-def ask_chatGPT(query):
-    API_KEY = os.getenv("OPENAI_API_KEY")  # Replace with your actual API key
-    OPENAI_URL = os.getenv("OPENAI_URL")
-
-    headers = {
-        "Authorization": f"Bearer {API_KEY}",
-        "Content-Type": "application/json"
-    }
-
-    data = {
-        "model": "gpt-3.5-turbo",  # or "gpt-4" if you have access
-        "messages": [{"role": "user", "content": query}],
-        "temperature": 0.7
-    }
+    model = "gemini-2.5-pro"
+    contents = [
+        types.Content(
+            role="user",
+            parts=[
+                types.Part.from_text(text=query),
+            ],
+        ),
+    ]
+    tools = [
+        types.Tool(googleSearch=types.GoogleSearch(
+        )),
+    ]
+    generate_content_config = types.GenerateContentConfig(
+        thinking_config=types.ThinkingConfig(
+            thinking_budget=-1,
+        ),
+        tools=tools,
+        response_mime_type="text/plain",
+    )
 
     try:
-        response = requests.post(OPENAI_URL, headers=headers, json=data)
-        response.raise_for_status()  # Raises HTTPError for bad responses (4xx or 5xx)
-
-        result = response.json()
-        return result["choices"][0]["message"]["content"]
-
-    except requests.exceptions.HTTPError as http_err:
-        return f"HTTP error occurred: {http_err} - {response.text}"
-    except requests.exceptions.RequestException as req_err:
-        return f"Request error occurred: {req_err}"
-    except (KeyError, IndexError, TypeError) as parse_err:
-        return f"Error parsing response: {parse_err}"
-
-
+        response = client.models.generate_content(
+            model=model,
+            contents=contents,
+            config=generate_content_config,
+        )
+        
+        if response.candidates and response.candidates[0].content:
+            parts = response.candidates[0].content.parts
+            generated_text = "\n".join(part.text for part in parts if hasattr(part, 'text'))
+            return generated_text
+        return "Error: No valid response from Gemini"
+        
+    except Exception as e:
+        return f"Error: {str(e)}"
 
 def ask_deepseek(query):
     client = OpenAI(api_key=os.getenv("DEEPSEEK_API_KEY"), base_url=os.getenv("DEEPSEEK_URL"))
