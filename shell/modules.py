@@ -38,6 +38,8 @@ def model_router(model_name, query):
         return ask_perplexity(query)
     elif model_name == "claude":
         return ask_claude_sonnet(query)
+    elif model_name == "grok":
+        return ask_grok(query)
     else:
         return f"Shell-Z doesn't support: {model_name}"
 
@@ -126,6 +128,47 @@ def ask_perplexity(query):
     except (KeyError, IndexError, TypeError) as parse_err:
         return f"Perplexity parsing error: {parse_err}"
 
+def ask_chatGPT(query):
+    """Interacts with the OpenAI GPT API."""
+    try:
+        api_key = os.getenv("OPENAI_API_KEY")
+        if not api_key:
+            return "Error: OPENAI_API_KEY not found in environment variables."
+
+        client = OpenAI(api_key=api_key)
+        response = client.chat.completions.create(
+            model="gpt-4",
+            messages=[
+                {"role": "system", "content": "You are a helpful assistant."},
+                {"role": "user", "content": query},
+            ]
+        )
+        return response.choices[0].message.content
+    except Exception as e:
+        return f"ChatGPT API error: {str(e)}"
+
+def ask_grok(query):
+    """Interacts with the Grok API."""
+    try:
+        api_key = os.getenv("XAI_API_KEY")
+        if not api_key:
+            return "Error: XAI_API_KEY not found in environment variables."
+
+        client = OpenAI(
+            api_key=api_key,
+            base_url="https://api.x.ai/v1",
+        )
+        response = client.chat.completions.create(
+            model="grok-1",
+            messages=[
+                {"role": "system", "content": "You are a helpful assistant."},
+                {"role": "user", "content": query},
+            ],
+            stream=False
+        )
+        return response.choices[0].message.content
+    except Exception as e:
+        return f"Grok API error: {str(e)}"
 
 def ask_claude_sonnet(query):
     client = anthropic.Anthropic(api_key=os.getenv("CLAUDE_API_KEY"))
