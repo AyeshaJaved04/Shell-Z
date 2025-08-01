@@ -12,6 +12,6 @@
 void printArts();
 void printDetails();
 void intro();
-// void showMainMenu();
+void display_logo();
 
 #endif
