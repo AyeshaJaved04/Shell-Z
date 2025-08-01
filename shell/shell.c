@@ -117,7 +117,7 @@ void execute_command(char *input)
             {
                 // This copies the entire source folder into the 'pages' directory.
                 char command[1024];
-                snprintf(command, sizeof(command), "cp -r %s /Users/alpha/Leo/Shell-Z/server/static/pages/", args[2]);
+                snprintf(command, sizeof(command), "cp -r %s /app/server/static/pages/", args[2]);
 
                 int status = system(command);
 
@@ -190,12 +190,12 @@ void execute_command(char *input)
         {
             if (args[2] && (strcmp(args[2], "server") == 0))
             {
-                system("cd /Users/alpha/Leo/Shell-Z/server/ && make clean");
+                system("cd /app/server/ && make clean");
                 return;
             }
             else if (args[2] && (strcmp(args[2], "scheduler") == 0))
             {
-                system("cd /Users/alpha/Leo/Shell-Z/scheduler/ && make clean");
+                system("cd /app/scheduler/ && make clean");
                 return;
             }
         }
@@ -204,9 +204,9 @@ void execute_command(char *input)
         {
             if (args[2] && ((strcmp(args[2], "server") == 0) || (strcmp(args[2], "dev") == 0)))
             {
-                system("cd /Users/alpha/Leo/Shell-Z/server/ && make");
+                system("cd /app/server/ && make");
                 // system("pwd");
-                system("cd /Users/alpha/Leo/Shell-Z/server/ && ./bin/server");
+                system("cd /app/server/ && ./bin/server");
                 return;
             }
 
@@ -221,7 +221,7 @@ void execute_command(char *input)
 
         if (args[1] && (strcmp(args[1], "explain") == 0 || strcmp(args[1], "generate") == 0 || strcmp(args[1], "ask") == 0) && args[2])
         {
-            char python_cmd[MAX_INPUT_SIZE] = "python3 /Users/alpha/Leo/Shell-Z/shell/main.py \"";
+            char python_cmd[MAX_INPUT_SIZE] = "python3 /app/shell/main.py \"";
             for (int j = 2; args[j]; j++)
             {
                 strcat(python_cmd, args[j]);
