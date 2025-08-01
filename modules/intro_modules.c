@@ -6,9 +6,40 @@
 #include "../include/intro_modules.h"
 #include "../include/utilities.h"
 
+void display_logo()
+{
+    int rows, cols;
+    get_terminal_size(&rows, &cols);
+
+    const char *logo[] = {
+        "  ____  _          _ _      _____  ",
+        " / ___|| |__   ___| | |    |__  /  ",
+        " \\___ \\| '_ \\ / _ \\ | |_____ / /   ",
+        "  ___) | | | |  __/ | |_____/ /_   ",
+        " |____/|_| |_|\\___|_|_|    /____|  "};
+    int logo_height = 5;
+    int logo_width = 38;
+
+    int start_row = (int)(rows * 0.10);
+    int start_col = (cols - logo_width) / 2;
+
+    if (start_row < 1)
+    {
+        start_row = 1;
+    }
+
+    for (int i = 0; i < logo_height; i++)
+    {
+        gotoxy(start_col, start_row + i);
+        ART_GREEN(); // Use ART_GREEN to ensure it's always colored
+        printf("%s\n", logo[i]);
+    }
+    RESET();
+}
+
 void printArts()
 {
-    usleep(350000);
+    shell_usleep(350000);
     GREEN();
 
     gotoxy(45, 3);
@@ -22,7 +53,7 @@ void printArts()
     gotoxy(45, 7);
     printf(" |____/|_| |_|\\___|_|_|    /____|  \n");
 
-    sleep(1);
+    shell_sleep(1);
 
     gotoxy(37, 10);
     printf("  ___  \n");
@@ -37,7 +68,7 @@ void printArts()
     gotoxy(37, 15);
     printf("\\_| |_/\n");
 
-    usleep(250000);
+    shell_usleep(250000);
 
     gotoxy(47, 10);
     printf("______          _           _   \n");
@@ -56,7 +87,7 @@ void printArts()
     gotoxy(47, 17);
     printf("             |__/                \n");
 
-    usleep(250000);
+    shell_usleep(250000);
 
     gotoxy(82, 10);
     printf("______       \n");
@@ -76,7 +107,7 @@ void printArts()
     printf("       |___/ \n");
 
     YELLOW();
-    sleep(1);
+    shell_sleep(1);
 
     gotoxy(29, 19);
     printf(" _____                        _____ ________  _________  ___ ______ _____ _____ \n");
@@ -92,7 +123,7 @@ void printArts()
     printf("  \\_/\\___|\\__,_|_| |_| |_|    \\____/\\___/\\_|  |_/\\_| \\_\\_| |_/___/ \\____/\\____/ \n");
 
     GREEN();
-    sleep(2);
+    shell_sleep(2);
     system("clear");
     gotoxy(45, 3);
     printf("  ____  _          _ _      _____  \n");
@@ -105,61 +136,60 @@ void printArts()
     gotoxy(45, 7);
     printf(" |____/|_| |_|\\___|_|_|    /____|  \n");
     RESET();
-
 }
 
 void printDetails()
 {
     gotoxy(13, 16);
 
-    sleep(1);
+    shell_sleep(1);
     animate("This is Shell-Z!", 150, 1, 33);
-    usleep(400000);
+    shell_usleep(400000);
     animate(" An intelligent and feature-rich Command-Line Environment designed to boost Your Productivity.\n", 25, 1, 32);
 
     gotoxy(60, 20);
     BLACK();
     BG_WHITE();
-    sleep(1);
+    shell_sleep(1);
     printf(" \033[1mHOLD ON! ");
     RESET();
 
     gotoxy(48, 22);
     animate("Initializing Shell-Z environment...", 50, 1, 32);
-    sleep(1);
+    shell_sleep(1);
 
     erase_and_animate("Spinning up AI-powered command engine...", 20, 40, strlen("Initializing Shell-Z environment..."), 1, 32);
-    sleep(1);
+    shell_sleep(1);
 
     erase_and_animate("", 20, 50, strlen("Spinning up AI-powered command engine..."), 1, 32);
-    
+
     gotoxy(53, 22);
     erase_and_animate("Bootstrapping core modules...", 20, 40, strlen(""), 1, 32);
-    sleep(1);
+    shell_sleep(1);
 
     erase_and_animate("", 20, 40, strlen("Bootstrapping core modules..."), 1, 32);
 
     gotoxy(45, 22);
     erase_and_animate("Linking automation layer with core modules...", 20, 40, strlen(""), 1, 32);
-    sleep(1);
+    shell_sleep(1);
 
     erase_and_animate("Injecting terminal intelligence protocols...", 20, 50, strlen("Linking automation layer with core modules..."), 1, 32);
-    sleep(2);
+    shell_sleep(2);
 
     erase_and_animate("Verifying developer tools and integrations...", 20, 50, strlen("Injecting terminal intelligence protocols..."), 1, 32);
-    sleep(1);
+    shell_sleep(1);
 
     erase_and_animate("Optimizing runtime performance...", 20, 50, strlen("Verifying developer tools and integrations..."), 1, 32);
-    sleep(1);
+    shell_sleep(1);
 
     erase_and_animate("Establishing link with GitHub & cloud services...", 20, 50, strlen("Optimizing runtime performance..."), 1, 32);
-    sleep(2);
+    shell_sleep(2);
 
     erase_and_animate("", 20, 50, strlen("Establishing link with GitHub & cloud services..."), 1, 32);
 
     gotoxy(50, 22);
     erase_and_animate("System Checks Complete...", 20, 50, strlen(""), 1, 32);
-    sleep(1);
+    shell_sleep(1);
 
     // gotoxy(53, 22);
     erase_and_animate("", 20, 50, strlen("System Checks Complete..."), 1, 32);
@@ -167,6 +197,10 @@ void printDetails()
     gotoxy(53, 22);
     erase_and_animate("Launching Shell-Z", 20, 50, strlen(""), 1, 32);
     animate("...", 1000, 1, 32);
+
+    gotoxy(0, 24);
+    animate("You're all set to dive into a smarter and a faster terminal experience!\n", 50, 0, 32);
+    animate("Type \033[1;36m \'ls\' \033[0;32m to get started...\n\n", 35, 0, 32);
 }
 
 // Intro animation
