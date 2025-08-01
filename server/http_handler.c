@@ -42,6 +42,23 @@ void handle_http_request(int client_sock, const char *request, struct sockaddr_i
     char file_path[512];
     snprintf(file_path, sizeof(file_path), "static%s", path);
 
+    /*
+     * =====================================================================
+     * --- NEW SERVER LOGIC TO HANDLE DIRECTORY REQUESTS ---
+     * =====================================================================
+     */
+
+    // Check if the constructed path points to a directory
+    struct stat path_stat;
+    if (stat(file_path, &path_stat) == 0 && S_ISDIR(path_stat.st_mode))
+    {
+        // If the path is a directory, append "/index.html" to serve the default page.
+        // using "strncat" to prevent buffer overflows.
+        strncat(file_path, "/index.html", sizeof(file_path) - strlen(file_path) - 1);
+    }
+
+    // Now, the rest of the function proceeds with the potentially updated file_path
+
     int file_fd = open(file_path, O_RDONLY);
     if (file_fd == -1)
     {
