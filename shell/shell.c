@@ -4,6 +4,7 @@
 #include <string.h>
 #include <sys/wait.h>
 #include <sys/stat.h>
+#include <libgen.h> // Include this header for basename()
 #include "../include/shell.h"
 #include "../include/custom_ui_modules.h"
 #include "../include/utilities.h"
@@ -110,25 +111,50 @@ void execute_command(char *input)
 
         if (args[1] && strcmp(args[1], "add") == 0 && args[2])
         {
+            // validate that the source path is a valid directory.
             struct stat st;
             if (stat(args[2], &st) == 0 && S_ISDIR(st.st_mode))
             {
-                char command[512];
-                snprintf(command, sizeof(command), "cp -r %s /app/server/static/pages/", args[2]);
+                // This copies the entire source folder into the 'pages' directory.
+                char command[1024];
+                snprintf(command, sizeof(command), "cp -r %s /Users/alpha/Leo/Shell-Z/server/static/pages/", args[2]);
+
                 int status = system(command);
+
                 if (status == 0)
-                    printf("Page added successfully.\n");
+                {
+                    // To create the URL, get the base name of the folder that was copied.
+                    char *path_copy = strdup(args[2]);
+                    if (path_copy == NULL)
+                    {
+                        perror("strdup");
+                        return;
+                    }
+                    char *dir_name = basename(path_copy);
+
+                    printf("\t ✅ PAGE ADDED SUCCESSFULLY!!!\n\n");
+                    GREEN();
+                    printf("   View it at: \033[0;34mhttp://localhost:8080/pages/%s/\033[0m\n", dir_name);
+                    RESET();
+                    YELLOW();
+                    printf("      Run the server using 'alpha run server'\n");
+                    RESET();
+
+                    free(path_copy); // Clean up the duplicated string
+                }
                 else
-                    printf("Failed to add page.\n");
+                {
+                    fprintf(stderr, "❌ Failed to copy the folder.\n");
+                }
             }
             else
             {
-                printf("Provided path is invalid or not a directory.\n");
+                printf("❌ Provided path is invalid or not a directory.\n");
             }
             return;
         }
 
-        if (args[1] && strcmp(args[1], "make") == 0)
+        if (args[1] && (strcmp(args[1], "make") == 0 || strcmp(args[1], "build") == 0))
         {
             system("make");
             return;
@@ -164,12 +190,12 @@ void execute_command(char *input)
         {
             if (args[2] && (strcmp(args[2], "server") == 0))
             {
-                system("cd /app/server/ && make clean");
+                system("cd /Users/alpha/Leo/Shell-Z/server/ && make clean");
                 return;
             }
             else if (args[2] && (strcmp(args[2], "scheduler") == 0))
             {
-                system("cd /app/scheduler/ && make clean");
+                system("cd /Users/alpha/Leo/Shell-Z/scheduler/ && make clean");
                 return;
             }
         }
@@ -178,9 +204,9 @@ void execute_command(char *input)
         {
             if (args[2] && ((strcmp(args[2], "server") == 0) || (strcmp(args[2], "dev") == 0)))
             {
-                system("cd /app/server/ && make");
+                system("cd /Users/alpha/Leo/Shell-Z/server/ && make");
                 // system("pwd");
-                system("cd /app/server/ && ./bin/server");
+                system("cd /Users/alpha/Leo/Shell-Z/server/ && ./bin/server");
                 return;
             }
 
@@ -195,7 +221,7 @@ void execute_command(char *input)
 
         if (args[1] && (strcmp(args[1], "explain") == 0 || strcmp(args[1], "generate") == 0 || strcmp(args[1], "ask") == 0) && args[2])
         {
-            char python_cmd[MAX_INPUT_SIZE] = "python3 /app/shell/main.py \"";
+            char python_cmd[MAX_INPUT_SIZE] = "python3 /Users/alpha/Leo/Shell-Z/shell/main.py \"";
             for (int j = 2; args[j]; j++)
             {
                 strcat(python_cmd, args[j]);
