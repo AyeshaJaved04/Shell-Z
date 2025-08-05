@@ -8,7 +8,7 @@ OBJ_DIR = obj
 BIN_DIR = bin
 
 # Source files
-SOURCES = main.c menu.c shell/shell.c modules/intro_modules.c modules/custom_ui_modules.c utilities/utilities.c
+SOURCES = main.c menu.c shell/shell.c shell/alpha_router.c modules/intro_modules.c modules/custom_ui_modules.c utilities/utilities.c
 
 # Object files
 OBJECTS = $(patsubst %.c,$(OBJ_DIR)/%.o,$(SOURCES))
